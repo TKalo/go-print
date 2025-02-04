@@ -8,6 +8,27 @@ Go Print is a simple command-line tool that scans a directory for files based on
 ✅ **Automatic Markdown Generation** - Outputs a structured `.md` file with file listings and content.
 ✅ **Language Detection** - Applies syntax highlighting for recognized file types.
 ✅ **Easy to Use** - Just run a single command, and the output is generated automatically.
+## Supported File Formats
+
+Go Print supports syntax highlighting for the following file formats:
+
+- **Go** (`.go`)
+- **JavaScript** (`.js`)
+- **TypeScript** (`.ts`)
+- **TSX** (`.tsx`)
+- **JSX** (`.jsx`)
+- **Ruby** (`.rb`)
+- **Python** (`.py`)
+- **Java** (`.java`)
+- **C** (`.c`)
+- **C++** (`.cpp`)
+- **HTML** (`.html`)
+- **CSS** (`.css`)
+- **Bash** (`.sh`)
+- **JSON** (`.json`)
+- **YAML** (`.yaml`, `.yml`)
+- **XML** (`.xml`)
+- **Markdown** (`.md`)
 
 ## Installation
 
