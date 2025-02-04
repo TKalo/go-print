@@ -1,0 +1,31 @@
+name: Build Executable
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.23.5'
+
+      - name: Install dependencies
+        run: go mod tidy
+
+      - name: Build executable
+        run: go build -o go-print.exe main.go
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: go-print-exe
+          path: go-print.exe
