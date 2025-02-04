@@ -140,6 +140,12 @@ func detectLanguage(filePath string) string {
 		return "javascript"
 	case ".ts":
 		return "typescript"
+	case ".tsx":
+		return "tsx"
+	case ".jsx":
+		return "jsx"
+	case ".rb":
+		return "ruby"
 	case ".py":
 		return "python"
 	case ".java":
