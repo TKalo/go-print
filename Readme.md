@@ -4,7 +4,7 @@ Go Print is a simple command-line tool that scans a directory for files based on
 
 ## Features
 
-✅ **Configurable File Selection** - Specify which files to include or exclude using `config.yaml`.
+✅ **Configurable File Selection** - Specify which files to include or exclude using `print.yaml`.
 ✅ **Automatic Markdown Generation** - Outputs a structured `.md` file with file listings and content.
 ✅ **Language Detection** - Applies syntax highlighting for recognized file types.
 ✅ **Easy to Use** - Just run a single command, and the output is generated automatically.
@@ -49,7 +49,7 @@ Run the tool from the project directory:
 ```sh
 ./go-print
 ```
-By default, it reads configuration from `config.yaml` and generates `output.md`.
+By default, it reads configuration from `print.yaml` and generates `output.md`.
 
 ### **Custom Configuration**
 You can specify a different config file:
@@ -59,7 +59,7 @@ You can specify a different config file:
 
 ## Configuration
 
-Modify `config.yaml` to customize the behavior:
+Modify `print.yaml` to customize the behavior:
 
 ```yaml
 output_path: output.md  # Where the markdown file will be saved
@@ -87,7 +87,7 @@ go-print/
 
 ## How It Works
 
-1. **Loads Configuration**: Reads `config.yaml` for included/excluded files.
+1. **Loads Configuration**: Reads `print.yaml` for included/excluded files.
 2. **Scans Directory**: Finds files matching the criteria.
 3. **Generates Markdown**:
    - File structure is written in a hierarchical format.
